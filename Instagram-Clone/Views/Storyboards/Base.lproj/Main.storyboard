@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="L5U-Um-rLw">
             <objects>
                 <navigationController id="g37-Sa-rwj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qx0-JC-w3k"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="qx0-JC-w3k"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cdH-Hm-GxD">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -64,11 +64,11 @@
             </objects>
             <point key="canvasLocation" x="804" y="-951"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="me1-tB-11k">
             <objects>
                 <navigationController id="R10-hA-Yoa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MnJ-bX-Oqf"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="MnJ-bX-Oqf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P05-em-Sty">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -81,11 +81,11 @@
             </objects>
             <point key="canvasLocation" x="-31" y="-102"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="JaM-Vf-Sr5">
             <objects>
                 <navigationController id="GeC-cr-GZ6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dEo-yI-lTj"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="dEo-yI-lTj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ifz-3i-qV3">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -98,11 +98,11 @@
             </objects>
             <point key="canvasLocation" x="804" y="-102"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Hpy-KE-2IX">
             <objects>
                 <navigationController id="gbI-hb-iUp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yrt-Ai-aNH"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="yrt-Ai-aNH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pNz-IX-Kff">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -115,11 +115,11 @@
             </objects>
             <point key="canvasLocation" x="1697" y="-102"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="qa3-jP-qeQ">
             <objects>
                 <navigationController id="C7l-0n-9gO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KSa-ri-6Ib"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.circle" catalog="system" id="KSa-ri-6Ib"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ocg-hr-HsZ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -198,6 +198,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
