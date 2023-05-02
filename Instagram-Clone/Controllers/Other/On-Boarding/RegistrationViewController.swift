@@ -115,7 +115,16 @@ class RegistrationViewController: UIViewController {
             return
         }
         
-        
+        AuthManager.shared.registerNewUser(username: username, email: email, password: password) { registered in
+            DispatchQueue.main.async {
+                if registered {
+                    
+                } else {
+//                    let alert = UIAlertController(title: <#T##String?#>, message: <#T##String?#>, preferredStyle: .alert)
+//                    self.present(alert, animated: true)
+                }
+            }
+        }
     }
 }
 

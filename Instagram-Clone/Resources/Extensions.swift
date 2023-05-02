@@ -32,3 +32,9 @@ extension UIView {
         return self.frame.size.width + self.frame.origin.x
     }
 }
+
+extension String {
+    func safeDatabaseEmail() -> String {
+        return self.replacingOccurrences(of: "@", with: "-").replacingOccurrences(of: ".", with: "_")
+    }
+}
