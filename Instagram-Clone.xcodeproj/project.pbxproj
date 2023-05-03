@@ -27,6 +27,10 @@
 		AD2BC16B29FD0AE1007691EA /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC16A29FD0AE1007691EA /* PostEditorViewController.swift */; };
 		AD2BC16D29FD0AFE007691EA /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BC16C29FD0AFE007691EA /* PublishPostViewController.swift */; };
 		AD2BC16F29FD0FA0007691EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD2BC16E29FD0FA0007691EA /* GoogleService-Info.plist */; };
+		AD52C0272A02D6450063A36D /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C0262A02D6450063A36D /* FeedPostTableViewCell.swift */; };
+		AD52C02B2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C02A2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift */; };
+		AD52C02D2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C02C2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift */; };
+		AD52C02F2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C02E2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift */; };
 		ADF298A329FE4B0800009759 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF298A229FE4B0800009759 /* LoginViewController.swift */; };
 		ADF298A529FE4B7000009759 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF298A429FE4B7000009759 /* RegistrationViewController.swift */; };
 		ADF298A729FE4D9B00009759 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF298A629FE4D9B00009759 /* DatabaseManager.swift */; };
@@ -61,6 +65,10 @@
 		AD2BC16A29FD0AE1007691EA /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		AD2BC16C29FD0AFE007691EA /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		AD2BC16E29FD0FA0007691EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD52C0262A02D6450063A36D /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		AD52C02A2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AD52C02C2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		AD52C02E2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		ADF298A229FE4B0800009759 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADF298A429FE4B7000009759 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ADF298A629FE4D9B00009759 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2BC15229FD0931007691EA /* Storyboards */,
+				AD52C0282A02D64B0063A36D /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +217,25 @@
 				ADF298A429FE4B7000009759 /* RegistrationViewController.swift */,
 			);
 			path = "On-Boarding";
+			sourceTree = "<group>";
+		};
+		AD52C0282A02D64B0063A36D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AD52C0292A02D7970063A36D /* Home Feed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AD52C0292A02D7970063A36D /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AD52C0262A02D6450063A36D /* FeedPostTableViewCell.swift */,
+				AD52C02A2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift */,
+				AD52C02C2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift */,
+				AD52C02E2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
 			sourceTree = "<group>";
 		};
 		ADF298AC29FE505E00009759 /* General */ = {
@@ -369,18 +397,22 @@
 				AD2BC16529FD0AA8007691EA /* ListViewController.swift in Sources */,
 				ADF298AB29FE4E8300009759 /* StorageManager.swift in Sources */,
 				AD2BC16729FD0AB8007691EA /* SearchViewController.swift in Sources */,
+				AD52C0272A02D6450063A36D /* FeedPostTableViewCell.swift in Sources */,
 				ADF298A729FE4D9B00009759 /* DatabaseManager.swift in Sources */,
 				ADF298A529FE4B7000009759 /* RegistrationViewController.swift in Sources */,
 				AD2BC13F29FD034C007691EA /* HomeViewController.swift in Sources */,
 				AD2BC15A29FD0A01007691EA /* ProfileViewController.swift in Sources */,
 				ADF298AE29FE638B00009759 /* Extensions.swift in Sources */,
+				AD52C02D2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift in Sources */,
 				AD2BC16D29FD0AFE007691EA /* PublishPostViewController.swift in Sources */,
 				AD2BC13B29FD034C007691EA /* AppDelegate.swift in Sources */,
 				ADF298A929FE4E5400009759 /* AuthManager.swift in Sources */,
+				AD52C02F2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift in Sources */,
 				ADF298A329FE4B0800009759 /* LoginViewController.swift in Sources */,
 				AD2BC13D29FD034C007691EA /* SceneDelegate.swift in Sources */,
 				AD2BC16929FD0AC7007691EA /* SearchResultViewController.swift in Sources */,
 				AD2BC16129FD0A86007691EA /* EditProfileViewController.swift in Sources */,
+				AD52C02B2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
