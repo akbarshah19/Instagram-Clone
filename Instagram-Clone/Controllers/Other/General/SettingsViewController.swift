@@ -92,6 +92,7 @@ final class SettingsViewController: UIViewController {
     func didTapEditProfile() {
         let vc = EditProfileViewController()
         let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
         present(nav, animated: true)
     }
     

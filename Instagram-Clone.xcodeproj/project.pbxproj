@@ -31,6 +31,10 @@
 		AD52C02B2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C02A2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift */; };
 		AD52C02D2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C02C2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift */; };
 		AD52C02F2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C02E2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift */; };
+		ADC5444F2A03ADBC0055DA52 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5444E2A03ADBC0055DA52 /* FormTableViewCell.swift */; };
+		ADC544522A03B6F40055DA52 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC544512A03B6F40055DA52 /* PhotoCollectionViewCell.swift */; };
+		ADC544542A03B76F0055DA52 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC544532A03B76F0055DA52 /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		ADC544562A03B7BB0055DA52 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC544552A03B7BB0055DA52 /* ProfileTabsCollectionReusableView.swift */; };
 		ADF298A329FE4B0800009759 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF298A229FE4B0800009759 /* LoginViewController.swift */; };
 		ADF298A529FE4B7000009759 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF298A429FE4B7000009759 /* RegistrationViewController.swift */; };
 		ADF298A729FE4D9B00009759 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF298A629FE4D9B00009759 /* DatabaseManager.swift */; };
@@ -69,6 +73,10 @@
 		AD52C02A2A02D7BF0063A36D /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AD52C02C2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
 		AD52C02E2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		ADC5444E2A03ADBC0055DA52 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		ADC544512A03B6F40055DA52 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADC544532A03B76F0055DA52 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		ADC544552A03B7BB0055DA52 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		ADF298A229FE4B0800009759 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADF298A429FE4B7000009759 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ADF298A629FE4D9B00009759 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -151,8 +159,9 @@
 		AD2BC14F29FD08C7007691EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AD2BC15229FD0931007691EA /* Storyboards */,
+				ADC544502A03B67D0055DA52 /* CollectionView Headers */,
 				AD52C0282A02D64B0063A36D /* Cells */,
+				AD2BC15229FD0931007691EA /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				AD52C0292A02D7970063A36D /* Home Feed */,
+				ADC5444E2A03ADBC0055DA52 /* FormTableViewCell.swift */,
+				ADC544512A03B6F40055DA52 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -236,6 +247,15 @@
 				AD52C02E2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift */,
 			);
 			path = "Home Feed";
+			sourceTree = "<group>";
+		};
+		ADC544502A03B67D0055DA52 /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				ADC544532A03B76F0055DA52 /* ProfileInfoHeaderCollectionReusableView.swift */,
+				ADC544552A03B7BB0055DA52 /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
 			sourceTree = "<group>";
 		};
 		ADF298AC29FE505E00009759 /* General */ = {
@@ -397,15 +417,19 @@
 				AD2BC16529FD0AA8007691EA /* ListViewController.swift in Sources */,
 				ADF298AB29FE4E8300009759 /* StorageManager.swift in Sources */,
 				AD2BC16729FD0AB8007691EA /* SearchViewController.swift in Sources */,
+				ADC5444F2A03ADBC0055DA52 /* FormTableViewCell.swift in Sources */,
 				AD52C0272A02D6450063A36D /* FeedPostTableViewCell.swift in Sources */,
+				ADC544562A03B7BB0055DA52 /* ProfileTabsCollectionReusableView.swift in Sources */,
 				ADF298A729FE4D9B00009759 /* DatabaseManager.swift in Sources */,
 				ADF298A529FE4B7000009759 /* RegistrationViewController.swift in Sources */,
 				AD2BC13F29FD034C007691EA /* HomeViewController.swift in Sources */,
+				ADC544522A03B6F40055DA52 /* PhotoCollectionViewCell.swift in Sources */,
 				AD2BC15A29FD0A01007691EA /* ProfileViewController.swift in Sources */,
 				ADF298AE29FE638B00009759 /* Extensions.swift in Sources */,
 				AD52C02D2A02D7DC0063A36D /* FeedPostActionsTableViewCell.swift in Sources */,
 				AD2BC16D29FD0AFE007691EA /* PublishPostViewController.swift in Sources */,
 				AD2BC13B29FD034C007691EA /* AppDelegate.swift in Sources */,
+				ADC544542A03B76F0055DA52 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				ADF298A929FE4E5400009759 /* AuthManager.swift in Sources */,
 				AD52C02F2A02D8120063A36D /* FeedPostGeneralTableViewCell.swift in Sources */,
 				ADF298A329FE4B0800009759 /* LoginViewController.swift in Sources */,
