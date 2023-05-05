@@ -8,6 +8,7 @@ target 'Instagram-Clone' do
   # Pods for Instagram-Clone
 
 pod 'Appirater'
+pod 'SDWebImage'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
 pod 'Firebase/Storage'
