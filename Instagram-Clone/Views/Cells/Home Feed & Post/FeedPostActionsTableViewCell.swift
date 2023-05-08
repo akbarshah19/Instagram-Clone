@@ -1,5 +1,5 @@
 //
-//  FeedPostTableViewCell.swift
+//  FeedPostActionsTableViewCell.swift
 //  Instagram-Clone
 //
 //  Created by Akbarshah Jumanazarov on 5/3/23.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-final class FeedPostTableViewCell: UITableViewCell {
-    
-    static let identifier = "FeedPostTableViewCell"
+class FeedPostActionsTableViewCell: UITableViewCell {
+    static let identifier = "FeedPostActionsTableViewCell"
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        contentView.backgroundColor = .systemGreen
     }
     
     required init?(coder: NSCoder) {
@@ -20,6 +20,16 @@ final class FeedPostTableViewCell: UITableViewCell {
     }
     
     public func configure() {
+        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
     }
 }
