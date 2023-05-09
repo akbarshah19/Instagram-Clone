@@ -152,9 +152,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let headerModel = model.header
             switch headerModel.renderType {
                 case .header(let user):
-                    let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostHeaderTableViewCell.identifier,
-                                                             for: indexPath) as! FeedPostHeaderTableViewCell
-                    return cell
+                let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostHeaderTableViewCell.identifier,
+                                                         for: indexPath) as! FeedPostHeaderTableViewCell
+                cell.configure(with: user)
+                cell.delegate = self
+                return cell
             case .actions, .primaryContent, .comments: return UITableViewCell()
             }
         } else if subSection == 1 {
@@ -164,6 +166,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 case .primaryContent(let post):
                     let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostTableViewCell.identifier,
                                                              for: indexPath) as! FeedPostTableViewCell
+                cell.configure(with: post)
                     return cell
                 case .actions, .comments, .header: return UITableViewCell()
             }
@@ -172,9 +175,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let actionsModel = model.actions
             switch actionsModel.renderType {
                 case .actions(let actions):
-                    let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostActionsTableViewCell.identifier,
-                                                             for: indexPath) as! FeedPostActionsTableViewCell
-                    return cell
+                let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostActionsTableViewCell.identifier,
+                                                         for: indexPath) as! FeedPostActionsTableViewCell
+                cell.delegate = self
+                return cell
                 case .comments, .primaryContent, .header: return UITableViewCell()
             }
         } else if subSection == 3 {
@@ -217,6 +221,37 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         let subSection = section % 4
         return subSection == 3 ? 70 : 0
+    }
+}
+
+extension HomeViewController: FeedPostHeaderTableViewCellDelegate {
+    func didTapMoreButton() {
+        let actionSheet = UIAlertController(title: "Post Options", message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        actionSheet.addAction(UIAlertAction(title: "Repost", style: .destructive, handler: { [weak self] _ in
+            self?.reportPost()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Unfollow", style: .default))
+
+        present(actionSheet, animated: true)
+    }
+    
+    func reportPost() {
+        
+    }
+}
+
+extension HomeViewController: FeedPostActionsTableViewCellDelegate {
+    func didTapLike() {
+        
+    }
+    
+    func didTapComment() {
+        
+    }
+    
+    func didTapShare() {
+        
     }
 }
 
